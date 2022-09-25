@@ -1,0 +1,170 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Header from "../components/Header.astro";
+import { Image } from "@astrojs/image/components";
+import heroImage from "../assets/pfp.png";
+---
+
+<Layout title="Boris Tsao - Actuary">
+  <main>
+    <Header />
+    <div id="first-section" class="h-screen text-gray-700">
+      <div class="mx-auto max-w-6xl justify-start sm:px-6 lg:px-8">
+        <!-- Content goes here -->
+        <div class="lg:pt-28 lg:grid lg:grid-cols-2">
+          <div class="mx-1">
+            <p class="text-sm font-bold tracking-tight flex">
+              <Image
+                src={heroImage}
+                width={50}
+                class="rounded-3xl border-gray-500 border-2"
+                alt="descriptive text"
+              />
+              <span class="lg:ml-2 lg:mt-2 text-xl">
+                Hello there, my name is Boris. &#128075;</span
+              >
+            </p>
+            <p class="mt-4 lg:text-4xl text-2xl">
+              By day, I consult businesses on their <span
+                class="font-extrabold text-transparent bg-clip-text bg-gradient-to-br from-pink-400 to-red-700"
+              >
+                global HR strategy.
+              </span> By night, I build things with<span
+                class="font-extrabold text-transparent bg-clip-text bg-gradient-to-br from-cyan-500 to-blue-900"
+              >
+                bleeding edge technologies.
+              </span>
+            </p>
+          </div>
+          <div class="mx-1">
+            <p class="mt-2 lg:text-xl">
+              In my current role, I work with clients to build out their global
+              benefits strategy. In my role, I am also responsible for several
+              software projects to help increase efficiencies and solve problems
+              they have. In my spare time, I like to work with bleeding edge
+              technologies to expand my engineering capabilities.
+            </p>
+          </div>
+        </div>
+        <div class="lg:grid lg:grid-cols-4 mt-2">
+          <div class="flex items-center">
+            <!--?xml version="1.0" encoding="UTF-8" standalone="no"?-->
+
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-person-workspace"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M4 16s-1 0-1-1 1-4 5-4 5 3 5 4-1 1-1 1H4Zm4-5.95a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5Z"
+              ></path>
+              <path
+                d="M2 1a2 2 0 0 0-2 2v9.5A1.5 1.5 0 0 0 1.5 14h.653a5.373 5.373 0 0 1 1.066-2H1V3a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v9h-2.219c.554.654.89 1.373 1.066 2h.653a1.5 1.5 0 0 0 1.5-1.5V3a2 2 0 0 0-2-2H2Z"
+              ></path>
+            </svg>
+            <p class="text-sm ml-2">Principal Global Consultant at Mercer</p>
+          </div>
+          <div class="flex items-center">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-pin-map-fill"
+              viewBox="0 0 16 16"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M3.1 11.2a.5.5 0 0 1 .4-.2H6a.5.5 0 0 1 0 1H3.75L1.5 15h13l-2.25-3H10a.5.5 0 0 1 0-1h2.5a.5.5 0 0 1 .4.2l3 4a.5.5 0 0 1-.4.8H.5a.5.5 0 0 1-.4-.8l3-4z"
+              ></path>
+              <path
+                fill-rule="evenodd"
+                d="M4 4a4 4 0 1 1 4.5 3.969V13.5a.5.5 0 0 1-1 0V7.97A4 4 0 0 1 4 3.999z"
+              ></path>
+            </svg><p class="text-sm ml-2">Vancouver, BC, Canada</p>
+          </div>
+          <div class="flex items-center">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-person-check-fill"
+              viewBox="0 0 16 16"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M15.854 5.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 0 1 .708-.708L12.5 7.793l2.646-2.647a.5.5 0 0 1 .708 0z"
+              ></path>
+              <path
+                d="M1 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"
+              ></path>
+            </svg>
+            <p class="text-sm ml-2">Associate at the Society of Actuaries</p>
+          </div>
+          <div class="flex items-center">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-search-heart-fill"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M6.5 13a6.474 6.474 0 0 0 3.845-1.258h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.008 1.008 0 0 0-.115-.1A6.471 6.471 0 0 0 13 6.5 6.502 6.502 0 0 0 6.5 0a6.5 6.5 0 1 0 0 13Zm0-8.518c1.664-1.673 5.825 1.254 0 5.018-5.825-3.764-1.664-6.69 0-5.018Z"
+              ></path>
+            </svg><p class="text-sm ml-2">
+              Passionate about software, blockchain, and fitness
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="custom-shape-divider-bottom-1663995881">
+        <svg
+          data-name="Layer 1"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 1200 120"
+          preserveAspectRatio="none"
+        >
+          <path
+            d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
+            class="shape-fill"></path>
+        </svg>
+      </div>
+    </div>
+    <div>Hi there</div>
+  </main>
+</Layout>
+
+<style>
+  #first-section {
+    background-image: url("../assets/wallpaper.jpg");
+    background-size: cover;
+    background-position: center;
+  }
+  .custom-shape-divider-bottom-1663995881 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+  }
+
+  .custom-shape-divider-bottom-1663995881 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 192px;
+    transform: rotateY(180deg);
+  }
+
+  .custom-shape-divider-bottom-1663995881 .shape-fill {
+    fill: #ffffff;
+  }
+</style>
