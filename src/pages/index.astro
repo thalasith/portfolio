@@ -2,11 +2,12 @@
 import Layout from "../layouts/Layout.astro";
 import Header from "../components/Header.astro";
 import { Image } from "@astrojs/image/components";
+import WorkTimeline from "../components/WorkTimeline";
 import heroImage from "../assets/pfp.png";
 ---
 
 <Layout title="Boris Tsao - Actuary">
-  <main>
+  <main class="font-roboto">
     <Header />
     <div id="first-section" class="h-screen text-gray-700">
       <div class="mx-auto max-w-6xl justify-start sm:px-6 lg:px-8">
@@ -136,7 +137,12 @@ import heroImage from "../assets/pfp.png";
         </svg>
       </div>
     </div>
-    <div>Hi there</div>
+    <div class="h-screen bg-white">
+      <div class="mx-auto max-w-6xl justify-start sm:px-6 lg:px-8">
+        <h2 class="text-4xl mt-10 text-center">Work</h2>
+        <WorkTimeline />
+      </div>
+    </div>
   </main>
 </Layout>
 
