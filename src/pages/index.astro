@@ -139,8 +139,19 @@ import heroImage from "../assets/pfp.png";
     </div>
     <div class="h-screen bg-white">
       <div class="mx-auto max-w-6xl justify-start sm:px-6 lg:px-8">
-        <h2 class="text-4xl mt-10 text-center">Work</h2>
-        <WorkTimeline />
+        <div class="relative z-0 mb-5">
+          <p class="text-gray-200 text-9xl mt-10 text-center font-extrabold">
+            Work
+          </p>
+          <div
+            class="absolute inset-x-0 bottom-0 flex justify-center items-center z-10"
+          >
+            <p class="text-4xl text-gray-600 font-bold">
+              What I have worked on
+            </p>
+          </div>
+        </div>
+        <WorkTimeline client:load />
       </div>
     </div>
   </main>
