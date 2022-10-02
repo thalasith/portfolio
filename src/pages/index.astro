@@ -3,8 +3,7 @@ import Layout from "../layouts/Layout.astro";
 import Header from "../components/Header.astro";
 import Timeline from "../components/Timeline.astro";
 import Intro from "../components/Intro.astro";
-import ProjectCard from "../components/ProjectCard";
-import picture from "../assets/portfolio.png";
+import Projects from "../components/Projects";
 ---
 
 <Layout title="Boris Tsao - Actuary">
@@ -52,23 +51,7 @@ import picture from "../assets/portfolio.png";
           edge technologies.
         </p>
         <div class="flex flex-col w-full">
-          <ProjectCard test={picture} />
-          <div class="border border-gray-600 p-1 flex flex-col">
-            <p class="text-4xl text-gray-600 font-bold">Decentrahoops</p>
-            <div class="text-lg text-gray-600">
-              <!-- <Image
-              src={heroImage}
-              width={50}
-              class="rounded-3xl border-gray-500 border-2"
-              alt="descriptive text"
-            /> -->
-              <span
-                >This is a marketplace for sportsbetting - specifically the NBA.
-                I built this to learn how blockchain technology works with a
-                novel idea.</span
-              >
-            </div>
-          </div>
+          <Projects />
         </div>
       </div>
     </div>
