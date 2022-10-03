@@ -2,7 +2,7 @@ const portfolio = "/@astroimage/assets/portfolio.png";
 const projects = [
   {
     title: "Portfolio Website",
-    image: portfolio,
+    image: "/portfolio.png",
     website: "https://portfolio-ctk5.vercel.app/",
     github: "https://github.com/thalasith/portfolio",
     description:
@@ -11,7 +11,7 @@ const projects = [
   },
   {
     title: "Decentrahoops",
-    image: "/@astroimage/assets/decentrahoops.gif",
+    image: "/decentrahoops.gif",
     website: "https://near-sportsmarketplace.vercel.app/",
     github: "https://github.com/thalasith/near-sportsmarketplace",
     description:
