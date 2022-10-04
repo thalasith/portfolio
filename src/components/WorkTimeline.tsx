@@ -52,7 +52,7 @@ const work = [
 
 export default function WorkTimeline() {
   const [active, setActive] = useState("2022");
-
+  const [isShowing, setIsShowing] = useState(false);
   const [item, setItem] = useState(work.find((item) => item.year === active));
 
   const handleItemChange = (year: string) => {
