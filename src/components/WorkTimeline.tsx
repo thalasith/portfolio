@@ -52,10 +52,10 @@ const work = [
 
 export default function WorkTimeline() {
   const [active, setActive] = useState("2022");
+
   const [item, setItem] = useState(work.find((item) => item.year === active));
 
   const handleItemChange = (year: string) => {
-    console.log(year);
     setActive(year);
     setItem(work.find((item) => item.year === year));
   };
@@ -108,7 +108,7 @@ export default function WorkTimeline() {
         >
           2021
         </button>
-        <div class="flex-grow border border-gray-400 " />
+        <div class="flex-grow border border-gray-400" />
         <button
           class=" flex-shrink mx-4 text-gray-600 font-semibold border-2 border-gray-200 rounded-full p-2 transition ease-in-out delay-150 hover:shadow-md hover:-translate-y-1 hover:scale-105 duration-300"
           onClick={() => {
