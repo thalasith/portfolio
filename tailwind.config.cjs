@@ -5,7 +5,11 @@ module.exports = {
     fontFamily: {
       roboto: ["Roboto", "sans-serif"],
     },
-    extend: {},
+    extend: {
+      backgroundImage: {
+        cycling: "url('/assets/wallpaper.jpg')",
+      },
+    },
   },
-  plugins: [],
+  plugins: [require("prettier-plugin-tailwindcss")],
 };
