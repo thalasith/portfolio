@@ -12,7 +12,7 @@ export default function WorkTimeline() {
   };
 
   return (
-    <div class="h-128 w-full border border-gray-400 lg:h-96">
+    <div class=" w-full border border-gray-400 lg:h-96">
       <div class=" flex w-full items-center px-5 py-5">
         <div class="flex-grow border border-gray-400" />
         <YearButton year="2014" handleItemChange={handleItemChange} />

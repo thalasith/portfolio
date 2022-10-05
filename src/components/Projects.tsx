@@ -1,7 +1,7 @@
 const portfolio = "/@astroimage/assets/portfolio.png";
 const projects = [
   {
-    title: "Portfolio Website",
+    title: "Portfolio Site",
     image: "/portfolio.png",
     website: "https://portfolio-ctk5.vercel.app/",
     github: "https://github.com/thalasith/portfolio",
@@ -39,13 +39,13 @@ const ProjectCard = ({
   technologies,
 }: any) => {
   return (
-    <div class="border border-gray-600 p-1 flex flex-col my-5 pl-5">
-      <p class="text-4xl text-gray-600 font-bold flex flex-row mb-2">
+    <div class="my-5 flex flex-col border border-gray-600 p-1 pl-5">
+      <p class="mb-2 flex flex-row justify-between text-2xl font-bold text-gray-600 lg:text-4xl">
         {title}
         <a
           target="_blank"
           href={website}
-          class="rounded-lg hover:bg-gray-600 hover:text-white mx-2"
+          class="mx-2 rounded-lg hover:bg-gray-600 hover:text-white"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -62,7 +62,7 @@ const ProjectCard = ({
         <a
           target="_blank"
           href={github}
-          class="rounded-lg hover:bg-gray-600 hover:text-white mx-2"
+          class="mx-2 rounded-lg hover:bg-gray-600 hover:text-white"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -77,12 +77,12 @@ const ProjectCard = ({
         </a>
       </p>
 
-      <div class="flex flex-row">
-        <img src={image} width={350} alt="Portfolio Website" />
-        <div class="flex flex-col ml-2">
-          <p class="text-2xl text-gray-600 font-bold">Tech Stack</p>
+      <div class="flex flex-col items-center bg-white lg:flex-row">
+        <img src={image} class="h-64 w-96" alt="Portfolio Website" />
+        <div class="ml-2 flex flex-col pt-2 lg:pt-0">
+          <p class="text-lg font-bold text-gray-600 lg:text-2xl">Tech Stack</p>
           <p>{technologies.join(" / ")}</p>
-          <p class="text-2xl text-gray-600 font-bold">Description</p>
+          <p class="text-lg font-bold text-gray-600 lg:text-2xl">Description</p>
           <div>{description}</div>
         </div>
       </div>

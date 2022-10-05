@@ -4,6 +4,7 @@ import Header from "../components/Header.astro";
 import WorkTimeline from "../components/WorkTimeline";
 import Intro from "../components/Intro.astro";
 import Projects from "../components/Projects";
+import Footer from "../components/Footer.astro";
 ---
 
 <Layout title="Boris Tsao - Actuary">
@@ -58,44 +59,23 @@ import Projects from "../components/Projects";
         <WorkTimeline client:load />
       </div>
     </div>
-
-    <!-- <div
-      id="first-section"
+    <div
+      id="third-section"
       class="h-screen text-gray-700 hiddenItem flex flex-col items-center w-screen"
     >
-      <Intro />
-      <div class="custom-divider">
-        <svg
-          data-name="Layer 1"
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 1200 120"
-          preserveAspectRatio="none"
-        >
-          <path
-            d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
-            class="shape-fill"></path>
-        </svg>
-      </div>
-    </div>
-
-    <div class="h-screen bg-white hiddenItem">
-      <Timeline />
-    </div>
-
-    <div id="third-section" class="h-screen bg-white hiddenItem">
       <div
-        class="mx-auto max-w-6xl justify-start sm:px-6 lg:px-8 flex flex-col items-center"
+        class="mx-auto max-w-6xl flex flex-col items-center justify-start w-screen pl-2 lg:pl-0"
       >
         <div class="relative z-0 mb-5">
           <p
-            class="text-gray-200 lg:text-9xl text-4xl mt-10 text-center font-extrabold"
+            class="text-gray-200 lg:text-9xl text-6xl mt-10 text-center font-extrabold"
           >
             Side Projects
           </p>
           <div
             class="absolute inset-x-0 bottom-0 flex justify-center items-center z-10"
           >
-            <p class="lg:text-4xl text-xl text-gray-600 font-bold">
+            <p class="lg:text-4xl text-gray-600 font-bold text-center">
               What I have been up to outside of work
             </p>
           </div>
@@ -104,12 +84,13 @@ import Projects from "../components/Projects";
           Below are a few projects that I am working on to test out bleeding
           edge technologies.
         </p>
-
         <div class="flex flex-col w-full">
-          <Projects />
+          <Projects client:visible />
         </div>
       </div>
-    </div> -->
+    </div>
+
+    <Footer />
   </main>
 </Layout>
 <script>
@@ -161,7 +142,7 @@ import Projects from "../components/Projects";
 
   .custom-divider {
     position: absolute;
-    bottom: 0;
+    bottom: -15px;
     left: 0;
     width: 100%;
     overflow: hidden;
