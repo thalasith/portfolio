@@ -12,7 +12,7 @@ export default function WorkTimeline() {
   };
 
   return (
-    <div class=" w-full border border-gray-400 lg:h-96">
+    <div class="mr-2 w-full border border-gray-400 lg:h-96">
       <div class=" flex w-full items-center px-5 py-5">
         <div class="flex-grow border border-gray-400" />
         <YearButton year="2014" handleItemChange={handleItemChange} />
@@ -33,7 +33,7 @@ export default function WorkTimeline() {
         <YearButton year="2022" handleItemChange={handleItemChange} />
       </div>
 
-      <div class="relative flex flex-row py-5 px-2 text-gray-600">
+      <div class="flex flex-row py-5 px-2 text-gray-600 ">
         <div class=" w-1/3">
           <img
             src={item?.image}

@@ -39,7 +39,7 @@ const ProjectCard = ({
   technologies,
 }: any) => {
   return (
-    <div class="my-5 flex flex-col border border-gray-600 p-1 pl-5">
+    <div class="my-5 mr-2 flex flex-col border border-gray-600 p-1 pl-5">
       <p class="mb-2 flex flex-row justify-between text-2xl font-bold text-gray-600 lg:text-4xl">
         {title}
         <a
