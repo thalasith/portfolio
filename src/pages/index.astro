@@ -12,7 +12,7 @@ import Footer from "../components/Footer.astro";
     <Header />
     <div
       id="first-section"
-      class="h-screen text-gray-700 hiddenItem flex flex-col items-center w-screen"
+      class="min-h-screen text-gray-700 hiddenItem flex flex-col items-center w-screen"
     >
       <Intro />
       <div class="custom-divider">
@@ -124,9 +124,10 @@ import Footer from "../components/Footer.astro";
     }
     .custom-divider {
       position: absolute;
-      bottom: 0;
+      bottom: -1px;
       left: 0;
       width: 50%;
+      /* height: 2%; */
       overflow: hidden;
       line-height: 0;
       transform: rotate(180deg);
@@ -141,7 +142,7 @@ import Footer from "../components/Footer.astro";
 
   .custom-divider {
     position: absolute;
-    bottom: -15px;
+    bottom: -1px;
     left: 0;
     width: 100%;
     overflow: hidden;
@@ -153,7 +154,7 @@ import Footer from "../components/Footer.astro";
     position: relative;
     display: block;
     width: calc(100% + 1.3px);
-    height: 150px;
+    height: 150%;
     transform: rotateY(180deg);
   }
 
