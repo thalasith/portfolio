@@ -122,6 +122,10 @@ import ValleyDivider from "../components/ValleyDivider.astro";
 </script>
 
 <style>
+  :global(html) {
+    scroll-behavior: smooth;
+  }
+
   #first-section {
     background-image: url("../assets/wallpaper.jpg");
     background-size: cover;
@@ -161,10 +165,14 @@ import ValleyDivider from "../components/ValleyDivider.astro";
     transition: all 2s;
   }
 
-  @media (prefer-reduced-motion) {
+  @media (prefer-reduced-motion: reduce) {
     .hiddenItem {
       transition: none;
       opacity: 1;
+    }
+
+    :global(html) {
+      scroll-behavior: auto;
     }
   }
 
