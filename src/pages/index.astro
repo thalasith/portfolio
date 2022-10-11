@@ -8,9 +8,9 @@ import Footer from "../components/Footer.astro";
 ---
 
 <Layout title="Boris Tsao - Actuary">
-  <main class="font-roboto flex flex-col min-h-screen">
+  <main class="font-roboto flex flex-col justify-between">
     <Header />
-    <div
+    <section
       id="first-section"
       class="min-h-screen text-gray-700 hiddenItem flex flex-col items-center w-screen"
     >
@@ -27,8 +27,8 @@ import Footer from "../components/Footer.astro";
             class="shape-fill"></path>
         </svg>
       </div>
-    </div>
-    <div
+    </section>
+    <section
       id="second-section"
       class="h-4/5 text-gray-700 hiddenItem flex flex-col items-center w-screen"
     >
@@ -194,10 +194,10 @@ import Footer from "../components/Footer.astro";
           </g>
         </svg>
       </div>
-    </div>
-    <div
+    </section>
+    <section
       id="third-section"
-      class="h-screen text-gray-700 hiddenItem flex flex-col items-center w-screen lg:mb-10"
+      class="h-screen text-gray-700 hiddenItem flex flex-col items-center w-screen lg:mb-32"
     >
       <div
         class="mx-auto max-w-6xl flex flex-col items-center justify-start w-screen pl-2 lg:pl-0"
@@ -224,7 +224,7 @@ import Footer from "../components/Footer.astro";
           <Projects client:visible />
         </div>
       </div>
-    </div>
+    </section>
     <Footer />
   </main>
 </Layout>
