@@ -53,26 +53,31 @@ const testClick = () => {
       </div>
     </div>
 
-    <div id="test" class="hidden">Hi there</div>
-
-    <!-- <div class="flex flex-wrap justify-center space-x-6 py-4 lg:hidden">
-      
-      <a href="#" class="text-base font-medium text-white hover:text-indigo-50"
+    <div
+      id="test"
+      class="flex-wrap justify-center space-x-6 py-4 hidden lg:hidden"
+    >
+      <a
+        href="#first-section"
+        class="text-base font-medium text-white hover:text-indigo-50"
         >Home Page</a
       >
 
-      <a href="#" class="text-base font-medium text-white hover:text-indigo-50"
-        >Resume</a
+      <a
+        href="#second-section"
+        class="text-base font-medium text-white hover:text-indigo-50">Resume</a
       >
 
-      <a href="#" class="text-base font-medium text-white hover:text-indigo-50"
+      <a
+        href="#third-section"
+        class="text-base font-medium text-white hover:text-indigo-50"
         >Projects</a
       >
 
       <a href="#" class="text-base font-medium text-white hover:text-indigo-50"
         >Contact</a
       >
-    </div> -->
+    </div>
   </nav>
 </header>
 
@@ -111,14 +116,14 @@ const testClick = () => {
   button!.addEventListener("click", onclick);
   window.onscroll = function () {
     {
-      window.pageYOffset === 0
+      window.pageYOffset === 0 && !shownElements
         ? (document.getElementById("header")!.style.backgroundColor =
             "transparent")
         : (document.getElementById("header")!.style.backgroundColor =
             "rgb(55,65,81)");
     }
     {
-      window.pageYOffset === 0
+      window.pageYOffset === 0 && !shownElements
         ? (document.getElementById("header")!.style.color = "rgba(55,65,81,1)")
         : (document.getElementById("header")!.style.color = "white");
     }
