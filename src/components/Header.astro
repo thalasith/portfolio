@@ -1,6 +1,10 @@
 ---
 import { Image } from "@astrojs/image/components";
 import heroImage from "../assets/pfp.png";
+
+const testClick = () => {
+  console.log("clicked");
+};
 ---
 
 <!-- This example requires Tailwind CSS v2.0+ -->
@@ -21,6 +25,21 @@ import heroImage from "../assets/pfp.png";
           >
         </a>
       </div>
+      <button id="x-button" class="lg:hidden"
+        ><svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="16"
+          height="16"
+          fill="currentColor"
+          class="bi bi-list"
+          viewBox="0 0 16 16"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"
+          ></path>
+        </svg>
+      </button>
       <div class="ml-10 space-x-4 hidden lg:block">
         <a href="#first-section" class="">Home Page</a>
         <a href="#second-section" class="">Resume</a>
@@ -34,7 +53,10 @@ import heroImage from "../assets/pfp.png";
       </div>
     </div>
 
+    <div id="test" class="hidden">Hi there</div>
+
     <!-- <div class="flex flex-wrap justify-center space-x-6 py-4 lg:hidden">
+      
       <a href="#" class="text-base font-medium text-white hover:text-indigo-50"
         >Home Page</a
       >
@@ -58,10 +80,35 @@ import heroImage from "../assets/pfp.png";
   #header {
     z-index: 1;
   }
+
+  .test {
+    animation: growDown 300ms ease-in-out forwards;
+  }
 </style>
 
 <script>
-  console.log(document.getElementById("header")!.style);
+  let shownElements = false;
+  function onclick() {
+    shownElements = !shownElements;
+    if (shownElements) {
+      document.getElementById("header")!.style.backgroundColor =
+        "rgb(55,65,81)";
+      document.getElementById("header")!.style.color = "white";
+      document.getElementById("test")!.classList.remove("hidden");
+      document.getElementById("x-button")!.innerHTML =
+        "<svg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='currentColor'  class='bi bi-x-lg' viewBox='0 0 16 16'> <path d='M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z'/></svg>";
+    } else {
+      // document.getElementById("header")!.style.backgroundColor = "transparent";
+      // document.getElementById("header")!.style.color = "rgba(55,65,81,1)";
+      document.getElementById("test")!.classList.add("hidden");
+      document.getElementById("x-button")!.innerHTML =
+        "<svg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='currentColor' class='bi bi-list' viewBox='0 0 16 16'> <path fill-rule='evenodd' d='M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z'/></svg>";
+    }
+  }
+
+  const button = document.getElementById("x-button");
+
+  button!.addEventListener("click", onclick);
   window.onscroll = function () {
     {
       window.pageYOffset === 0
