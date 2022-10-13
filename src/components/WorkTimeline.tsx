@@ -1,5 +1,6 @@
 import { useState } from "preact/hooks";
 import work from "../assets/work.json";
+// const promotion = "/@astroimage/assets/promotion.gif";
 
 export default function WorkTimeline() {
   const [active, setActive] = useState("2022");
