@@ -47,23 +47,22 @@ import ValleyDivider from "../components/ValleyDivider.astro";
             </p>
           </div>
         </div>
-        <p class="text-gray-600 mb-5 w-3/4 text-center">
-          The below brings to light a few pivotal milestones in my career that
-          has shaped me into the person I am today. Over the course of my
-          career, I have learnt to ask the right questions, and to be curious
-          about the world around me. I have become a mentor for many of my
-          colleagues and always willing to help out if they have questions.
+        <p class="text-gray-600 mb-5 w-1/2 text-center">
+          The below are a few pivotal milestones in my career that has shaped me
+          into the person I am today. Over the course of my career, I learnt to
+          ask the right questions, and to be curious about the world around me.
+          I am a mentor for many of my colleagues and always willing to help out
+          if they have questions.
         </p>
         <WorkTimeline client:visible />
       </div>
       <div id="projects" class="custom-divider lg:hidden inline mt-10">
         <ValleyDividerMobile />
       </div>
-      <div class="custom-divider lg:inline hidden mt-10">
-        <ValleyDivider />
-      </div>
     </section>
-    <section class="h-screen text-gray-700 flex flex-col items-center w-screen">
+    <section
+      class="h-screen text-gray-700 flex flex-col items-center w-screen pt-20"
+    >
       <div
         class="mx-auto max-w-6xl flex flex-col items-center justify-start w-screen pl-2 lg:pl-0 hiddenItem"
       >
@@ -85,9 +84,7 @@ import ValleyDivider from "../components/ValleyDivider.astro";
           Below are a few projects that I am working on to test out bleeding
           edge technologies.
         </p>
-        <div class="flex flex-col w-full">
-          <Projects client:visible />
-        </div>
+        <Projects client:visible />
       </div>
       <Footer />
     </section>

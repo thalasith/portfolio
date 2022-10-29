@@ -39,8 +39,8 @@ const ProjectCard = ({
   technologies,
 }: any) => {
   return (
-    <div class="my-5 mr-2 flex flex-col rounded border border-gray-600 p-1 pl-5">
-      <p class="mb-2 flex flex-row justify-between text-2xl font-bold text-gray-600 lg:text-4xl">
+    <div class="my-5 mr-2 flex w-full flex-col rounded border border-gray-600 p-2 pl-5 lg:w-2/3">
+      <p class="mb-2 flex flex-row justify-between pb-4 text-2xl font-bold text-gray-600 lg:text-4xl">
         {title}
         <div class="flex flex-row">
           <a
@@ -79,12 +79,16 @@ const ProjectCard = ({
         </div>
       </p>
 
-      <div class="flex flex-col items-center bg-white lg:flex-row">
-        <img src={image} class="h-64 w-96" alt="Portfolio Website" />
+      <div class="flex flex-col items-center bg-white align-top lg:flex-row">
+        <img src={image} class="mr-4 h-48 w-72" alt="Portfolio Website" />
         <div class="ml-2 flex flex-col pt-2 lg:pt-0">
-          <p class="text-lg font-bold text-gray-600 lg:text-2xl">Tech Stack</p>
+          <p class="mt-4 text-lg font-bold text-gray-600 lg:mt-0 lg:text-2xl">
+            Tech Stack
+          </p>
           <p>{technologies.join(" / ")}</p>
-          <p class="text-lg font-bold text-gray-600 lg:text-2xl">Description</p>
+          <p class="mt-5 text-lg font-bold text-gray-600 lg:text-2xl">
+            Description
+          </p>
           <div>{description}</div>
         </div>
       </div>
@@ -94,7 +98,7 @@ const ProjectCard = ({
 
 export default function Projects() {
   return (
-    <div class="flex flex-col">
+    <div class="flex flex-col items-center">
       {projects.map((project) => {
         return (
           <ProjectCard
