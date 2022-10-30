@@ -9,6 +9,11 @@ module.exports = {
       backgroundImage: {
         cycling: "url('/assets/wallpaper.jpg')",
       },
+      colors: {
+        "matte-orange": "#F2B988",
+        "bubble-gum": "#DFBCBD",
+        "purple-planet": "#8E6FF2",
+      },
     },
   },
   plugins: [require("prettier-plugin-tailwindcss")],
