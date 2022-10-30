@@ -46,9 +46,7 @@ export default function WorkTimeline() {
           <div>
             <p class="text-sm lg:text-sm">{item?.year}</p>
           </div>
-          <h2 class="text-2xl font-extrabold text-purple-planet">
-            {item?.title}
-          </h2>
+          <h2 class="text-2xl font-extrabold">{item?.title}</h2>
 
           <div class="text-sm lg:text-base">{item?.description}</div>
         </div>
