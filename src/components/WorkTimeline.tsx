@@ -34,19 +34,19 @@ export default function WorkTimeline() {
         <YearButton year="2022" handleItemChange={handleItemChange} />
       </div>
 
-      <div class="flex flex-row py-5 px-2 text-gray-600">
-        <div class="w-1/3">
+      <div class="flex flex-col items-center py-5 px-2 text-gray-600 lg:flex-row ">
+        <div class="lg:w-1/3">
           <img
             src={item?.image}
-            class="object-scale-down lg:h-48 lg:w-96"
+            class="h-48 w-96 object-scale-down"
             alt="loading..."
           />
         </div>
-        <div class="ml-4 flex w-2/3 flex-col">
+        <div class="ml-4 flex flex-col pt-8 lg:w-2/3 lg:pt-0">
           <div>
-            <p class="text-xs lg:text-sm">{item?.year}</p>
+            <p class="text-sm lg:text-sm">{item?.year}</p>
           </div>
-          <h2 class="text-md font-extrabold lg:text-2xl">{item?.title}</h2>
+          <h2 class="text-2xl font-extrabold">{item?.title}</h2>
 
           <div class="text-sm lg:text-base">{item?.description}</div>
         </div>

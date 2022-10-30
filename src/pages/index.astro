@@ -4,8 +4,6 @@ import WorkTimeline from "../components/WorkTimeline";
 import Intro from "../components/Intro.astro";
 import Projects from "../components/Projects";
 import Footer from "../components/Footer.astro";
-import ValleyDividerMobile from "../components/ValleyDividerMobile.astro";
-import ValleyDivider from "../components/ValleyDivider.astro";
 ---
 
 <Layout title="Boris Tsao - Actuary">
@@ -47,7 +45,7 @@ import ValleyDivider from "../components/ValleyDivider.astro";
             </p>
           </div>
         </div>
-        <p class="text-gray-600 mb-5 w-1/2 text-center">
+        <p class="text-gray-600 mb-5 lg:w-1/2 text-center w-4/5">
           The below are a few pivotal milestones in my career that has shaped me
           into the person I am today. Over the course of my career, I learnt to
           ask the right questions, and to be curious about the world around me.
@@ -55,9 +53,6 @@ import ValleyDivider from "../components/ValleyDivider.astro";
           if they have questions.
         </p>
         <WorkTimeline client:visible />
-      </div>
-      <div id="projects" class="custom-divider lg:hidden inline mt-10">
-        <ValleyDividerMobile />
       </div>
     </section>
     <section
