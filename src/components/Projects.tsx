@@ -40,7 +40,7 @@ const ProjectCard = ({
 }: any) => {
   return (
     <div class="my-5 mr-2 flex w-full flex-col rounded border border-gray-600 p-2 pl-5 lg:w-2/3">
-      <p class="mb-2 flex flex-row justify-between pb-4 text-2xl font-bold text-gray-600 lg:text-4xl">
+      <p class="mb-2 mt-2 flex flex-row justify-between pb-4 text-2xl font-bold text-gray-600 lg:text-4xl">
         {title}
         <div class="flex flex-row">
           <a
