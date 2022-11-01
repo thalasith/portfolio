@@ -15,7 +15,11 @@ export default function WorkTimeline() {
     <div class="mr-2 w-full rounded border border-gray-400 lg:h-96 lg:w-2/3">
       <div class=" flex w-full items-center px-5 py-5">
         <div class="flex-grow border border-gray-400" />
-        <YearButton year="2014" handleItemChange={handleItemChange} />
+        <YearButton
+          year="2014"
+          active={active}
+          handleItemChange={handleItemChange}
+        />
 
         <div class="flex-grow border border-gray-400" />
         <YearButton
