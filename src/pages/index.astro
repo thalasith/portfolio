@@ -8,9 +8,8 @@ import Footer from "../components/Footer.astro";
 
 <Layout title="Boris Tsao - Actuary">
   <main class="font-roboto flex flex-col justify-between min-h-screen">
-    <!-- <Header /> -->
     <section
-      id="first-section"
+      id="homepage"
       class="min-h-screen text-gray-700 hiddenItem flex flex-col items-center w-screen"
     >
       <Intro />
@@ -53,6 +52,7 @@ import Footer from "../components/Footer.astro";
           have questions.
         </p>
         <WorkTimeline client:visible />
+        <div id="projects"></div>
       </div>
     </section>
     <section
@@ -111,14 +111,14 @@ import Footer from "../components/Footer.astro";
     scroll-behavior: smooth;
   }
 
-  #first-section {
+  #homepage {
     background-image: url("../assets/wallpaper.jpg");
     background-size: cover;
     background-position: center;
   }
 
   @media only screen and (max-device-width: 768px) {
-    #first-section {
+    #homepage {
       background-image: url("../assets/wallpaper.jpg");
       background-size: cover;
       background-position: 40% 50%;
